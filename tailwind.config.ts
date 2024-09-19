@@ -24,10 +24,10 @@ const config: Config = {
         light: {
           colors: {
             primary: {
-              DEFAULT: "#CC8899",
-              foreground: "#d1001f",
+              DEFAULT: "#FFFFFF",
+              foreground: "#000000",
             },
-            focus: "#d1001f",
+            focus: "#000000",
           },
         },
       },
