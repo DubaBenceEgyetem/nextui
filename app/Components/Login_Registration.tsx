@@ -18,13 +18,12 @@ function Login() {
           animate={{ opacity: 1, scale: 1 }} 
           className="flex flex-col items-center justify-center min-h-screen text-white text-center"
         >
-          <div className="bg-transparent rounded-lg border-2 p-6">
+          <div className="bg-transparent rounded-lg border-2 p-6 shadow-2xl">
             <div className="flex flex-col md:flex-nowrap gap-5 m-8">
-              <div className="flex justify-between items-center">
+              <div className="flex justify-center">
                 <label className="text-3xl font-bold md:text-4xl lg:text-5xl">
                   Sign In
                 </label>
-                <Button onClick={SwapLabel}>hi</Button>
               </div>
               <Input
                 type="email"
@@ -49,6 +48,7 @@ function Login() {
               >
                 Submit
               </Button>
+              You don't have account? <a className="cursor-pointer font-bold" onClick={SwapLabel}>Make account here</a>
             </div>
           </div>
         </motion.div>
@@ -62,11 +62,10 @@ function Login() {
       >
           <div className="bg-transparent rounded-lg border-2 p-6">
             <div className="flex flex-col md:flex-nowrap gap-5 m-8">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-center">
                 <label className="text-3xl font-bold md:text-4xl lg:text-5xl">
                   Registration
                 </label>
-                <Button onClick={SwapLabel}>hi</Button>
               </div>
               <Input
                 type="email"
@@ -95,10 +94,11 @@ function Login() {
               <Button
                 radius="lg"
                 variant="solid"
-                className="bg-gradient-to-tr from-purple-500 to-purple-700 text-white font-bold w-full "
+                className="bg-gradient-to-tr from-purple-500 to-purple-700 text-white font-bold w-full mt-5"
               >
                 Submit
               </Button>
+              <a className="cursor-pointer font-bold" onClick={SwapLabel}>Login here</a>
             </div>
           </div>
         </motion.div>
