@@ -56,7 +56,7 @@ function Login() {
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 2, scale: 1 }} 
-          className="flex flex-col items-center justify-center min-h-screen text-white text-center"
+          className="flex flex-col items-center justify-center min-h-screen  text-center"
         >
           <div className="bg-transparent rounded-lg border-2 p-6 shadow-2xl">
             <div className="flex flex-col md:flex-nowrap gap-5 m-8">
@@ -98,7 +98,7 @@ function Login() {
         <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }} 
-        className="flex flex-col items-center justify-center min-h-screen text-white text-center"
+        className="flex flex-col items-center justify-center min-h-screen  text-center"
       >
           <div className="bg-transparent rounded-lg border-2 p-6">
             <div className="flex flex-col md:flex-nowrap gap-5 m-8">
