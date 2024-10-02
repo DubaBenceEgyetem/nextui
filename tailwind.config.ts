@@ -15,6 +15,10 @@ const config: Config = {
         foreground: "var(--foreground)",
         gradient: 'rgba(32,30,82,1)'
       },
+      boxShadow: {
+        light: '0 10px 10px rgba(0, 0, 0, 0.1)',  // Világos téma árnyéka
+        dark: '0 10px 10px rgba(255, 255, 255, 0.5)',
+      },
     },
   },
   darkMode: "class",

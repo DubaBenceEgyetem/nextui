@@ -58,7 +58,7 @@ function Login() {
           animate={{ opacity: 2, scale: 1 }} 
           className="flex flex-col items-center justify-center min-h-screen  text-center"
         >
-          <div className="bg-transparent rounded-lg border-2 p-6 shadow-2xl">
+          <div className="bg-transparent rounded-lg border-2 p-6 shadow-light dark:shadow-dark">
             <div className="flex flex-col md:flex-nowrap gap-5 m-8">
               <div className="flex justify-center">
                 <label className="text-3xl font-bold md:text-4xl lg:text-5xl">
@@ -100,7 +100,7 @@ function Login() {
         animate={{ opacity: 1, scale: 1 }} 
         className="flex flex-col items-center justify-center min-h-screen  text-center"
       >
-          <div className="bg-transparent rounded-lg border-2 p-6">
+          <div className="bg-transparent rounded-lg border-2 p-6 shadow-light dark:shadow-dark">
             <div className="flex flex-col md:flex-nowrap gap-5 m-8">
             <div className="flex justify-center">
                 <label className="text-3xl font-bold md:text-4xl lg:text-5xl">

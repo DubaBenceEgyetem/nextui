@@ -31,5 +31,6 @@ export function DarkMode() {
         <DropdownItem onClick={() => setTheme("system")}>System</DropdownItem>
       </DropdownMenu>
     </Dropdown>
+    
   );
 }
