@@ -16,8 +16,8 @@ const config: Config = {
         gradient: 'rgba(32,30,82,1)'
       },
       boxShadow: {
-        light: '0 10px 10px rgba(0, 0, 0, 0.1)',  // Világos téma árnyéka
-        dark: '0 10px 10px rgba(255, 255, 255, 0.5)',
+        light: '0 0 42px 10px #b3b3b3',  // Világos téma árnyéka
+        dark: '0 0 42px 10px #021526',
       },
     },
   },

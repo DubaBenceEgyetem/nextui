@@ -2,13 +2,13 @@ import React from "react";
 import { Input, Spacer, Button } from "@nextui-org/react";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 
 
-function Login() {
+function Login_Registration()  {
   const [Swap, setSwap] = useState(true);
   const [data, setData] = useState({
     email: '',
@@ -29,7 +29,7 @@ function Login() {
     setValid(false)
   };
 
-  const handleSubmit = (event:  React.FormEvent<HTMLFormElement>) =>{
+  const handleSubmit = (event:  React.FormEvent<HTMLFormElement> ) =>{
     const {email, password, passwordSecond} = data;
     event.preventDefault()
 
@@ -58,7 +58,7 @@ function Login() {
           animate={{ opacity: 2, scale: 1 }} 
           className="flex flex-col items-center justify-center min-h-screen  text-center"
         >
-          <div className="bg-transparent rounded-lg border-2 p-6 shadow-light dark:shadow-dark">
+          <div className="bg-[#f1f1f1] dark:bg-[#080707] rounded-lg  p-6 shadow-light dark:shadow-dark">
             <div className="flex flex-col md:flex-nowrap gap-5 m-8">
               <div className="flex justify-center">
                 <label className="text-3xl font-bold md:text-4xl lg:text-5xl">
@@ -88,7 +88,7 @@ function Login() {
               >
                 Submit
               </Button>
-              You don't have account? <a className="cursor-pointer font-bold" onClick={SwapLabel}>Make account here</a>
+              You don't have account? <motion.a whileHover={{ scale: 1.2 }} className="cursor-pointer font-bold" onClick={SwapLabel}>Make account here</motion.a>
             </div>
           </div>
         </motion.div>
@@ -100,7 +100,7 @@ function Login() {
         animate={{ opacity: 1, scale: 1 }} 
         className="flex flex-col items-center justify-center min-h-screen  text-center"
       >
-          <div className="bg-transparent rounded-lg border-2 p-6 shadow-light dark:shadow-dark">
+          <div className="bg-[#f1f1f1] dark:bg-[#080707] rounded-lg  p-6 shadow-light dark:shadow-dark">
             <div className="flex flex-col md:flex-nowrap gap-5 m-8">
             <div className="flex justify-center">
                 <label className="text-3xl font-bold md:text-4xl lg:text-5xl">
@@ -149,26 +149,15 @@ function Login() {
               >
                 Submit
               </Button>
-              <a className="cursor-pointer font-bold" onClick={SwapLabel}>Login here</a>
+              <motion.a whileHover={{ scale: 1.2 }}  className="cursor-pointer font-bold" onClick={SwapLabel}>Login here</motion.a>
             </div>
           </div>
         </motion.div>
         </form>
       )}
-      <ToastContainer
-position="bottom-center"
-autoClose={5000}
-hideProgressBar={false}
-newestOnTop={false}
-closeOnClick
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
-theme="light"
-/>
+     
     </>
   );
 }
 
-export default Login;
+export default Login_Registration;
